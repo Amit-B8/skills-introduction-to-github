@@ -1,8 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
-
-from django.http import HttpResponse
-
 def home(request):
-    return HttpResponse("<h1>Welcome to my portfolio site!</h1>")
+    return render(request, 'home.html')
+
+def resume(request):
+    return render(request, 'resume.html')
+
+def projects(request):
+    return render(request, 'projects.html')
+
+def favorites(request):
+    return render(request, 'favorites.html')
